@@ -10,6 +10,14 @@ class Pikachu extends React.Component {
     };
   }
 
+  componenentDidUpdate(prevProps, prevState) {
+    if (prevProps.size > this.props.size) {
+    this.makeSmaller;
+  } else if (prevProps.size > this.props.size) {
+    this.makeBigger
+    }
+  }
+
   resizePikachu = () => {
     const pikachu = document.getElementById("pikachu");
     pikachu.height = this.state.size;
